@@ -1,12 +1,70 @@
 body {
-    background-color: black;
+    background-image: url("./olympics-scaled.webp"); /* The image used */
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  color: ;
 }
 
 h1 {
-    color: peru;
     text-align: center;
 }
 
-p {
-    color: whitesmoke;
+
+
+h2 {
+    text-align: center;
+    
+    
 }
+
+
+
+ul {
+    text-align: center;
+}
+
+.img-wrap {
+    position: relative;
+    padding: 30px;
+  }
+  .img-wrap::after {
+    content: '';
+    border-radius: 999px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+      from var(--from),
+      var(--color1),
+      var(--color2) var(--distance),
+      transparent var(--distance)
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+  }
+  img {
+    border-radius: 999px;
+    display: block;
+    width: calc(100vw - 80px);
+    max-width: 360px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  
